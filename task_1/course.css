@@ -1,14 +1,36 @@
-body{
-	margin: 0 auto;
-	background-image: url("../image/technology.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 720px;
-	background-color: rgb(205, 194, 233);  
-}
-.table{
-	width:  100%;
-	margin: 10px;
-}
+    body{
+        margin: 0 auto;
+        background-color: rgb(194, 194, 200);  
+        display: flex;
+
+    }
+    .table{
+        width:  100%;
+        margin: 10px;
+    }
+
+      
+      .text-center {
+        text-align: center;
+      }
+
+
 #headercenter {
     text-align: center;
   }
+
+  td,
+th {
+    border: 1px solid #99979d;
+    text-align: left;
+    padding: 8px;
+    min-width: 100px;
+}
+
+th {
+    background-color: #656565;
+    color: white;
+}
+
+  
+
