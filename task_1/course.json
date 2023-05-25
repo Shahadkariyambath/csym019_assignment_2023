@@ -1,4 +1,6 @@
-[{
+{
+  "courseDetails": [
+    {
     "id":"1",
     "name":"Computing (Software Engineering) MSc",
     "link":"https://www.northampton.ac.uk/courses/computing-software-engineering-msc/",
@@ -18,4 +20,6 @@
   "Software Engineering - 20 credits",
   "Modern Computer Architecture - 20 credits"
   ]
-  }]
+  }
+]
+}

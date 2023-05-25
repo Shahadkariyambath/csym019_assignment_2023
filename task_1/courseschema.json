@@ -1,100 +1,108 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "type": "array",
-    "items": [
-      {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string"
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "courseDetails": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "link": {
+              "type": "string"
+            },
+            "Level": {
+              "type": "string"
+            },
+            "Duration": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "Starting": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "Fees_UK ": {
+              "type": "string"
+            },
+            "Fees_Int": {
+              "type": "string"
+            },
+            "Location": {
+              "type": "string"
+            },
+            "course_Overview": {
+              "type": "string"
+            },
+            "english_language_requirements": {
+              "type": "string"
+            },
+            "module_and_credits": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
           },
-          "name": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          },
-          "Level": {
-            "type": "string"
-          },
-          "Duration": {
-            "type": "array",
-            "items": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "string"
-              }
-            ]
-          },
-          "Starting": {
-            "type": "array",
-            "items": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "string"
-              }
-            ]
-          },
-          "Fees_UK ": {
-            "type": "string"
-          },
-          "Fees_Int": {
-            "type": "string"
-          },
-          "Location": {
-            "type": "string"
-          },
-          "course_Overview": {
-            "type": "string"
-          },
-          "english_language_requirements": {
-            "type": "string"
-          },
-          "module_and_credits": {
-            "type": "array",
-            "items": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "string"
-              },
-              {
-                "type": "string"
-              },
-              {
-                "type": "string"
-              },
-              {
-                "type": "string"
-              },
-              {
-                "type": "string"
-              },
-              {
-                "type": "string"
-              }
-            ]
-          }
-        },
-        "required": [
-          "id",
-          "name",
-          "link",
-          "Level",
-          "Duration",
-          "Starting",
-          "Fees_UK ",
-          "Fees_Int",
-          "Location",
-          "course_Overview",
-          "english_language_requirements",
-          "module_and_credits"
-        ]
-      }
-    ]
-  }
+          "required": [
+            "id",
+            "name",
+            "link",
+            "Level",
+            "Duration",
+            "Starting",
+            "Fees_UK ",
+            "Fees_Int",
+            "Location",
+            "course_Overview",
+            "english_language_requirements",
+            "module_and_credits"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "courseDetails"
+  ]
+}
