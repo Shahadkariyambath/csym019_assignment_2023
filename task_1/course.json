@@ -1,0 +1,21 @@
+[{
+    "id":"1",
+    "name":"Computing (Software Engineering) MSc",
+    "link":"https://www.northampton.ac.uk/courses/computing-software-engineering-msc/",
+    "Level":"Postgraduate",
+    "Duration":["1 year","2 year"],
+    "Starting":["September","February"],
+    "Fees_UK ":"8010",
+    "Fees_Int":"16500",
+    "Location":"Waterside",
+    "course_Overview":"Study the design of software systems at a greater depth with our Computing (Software Engineering) MSc course. Alongside exploring areas of computer software engineering, you will also have the opportunity to develop your analytics and research skills during this Computing postgraduate degree. Students will complete an individual thesis which will investigate an area they find of particular interest.",
+    "english_language_requirements":"IELTS 6.5 (or equivalent)",
+    "module_and_credits":["Intelligent Systems - 20 credits",
+  "Databases - 20 credits",
+  "Internet Programming - 20 credits",
+  "Dissertation - 60 credits",
+  "Visual Object Software - 20 credits",
+  "Software Engineering - 20 credits",
+  "Modern Computer Architecture - 20 credits"
+  ]
+  }]
