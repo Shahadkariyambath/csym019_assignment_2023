@@ -1,26 +1,26 @@
-    body{
-        margin: 0 auto;
-        background-color: rgb(194, 194, 200);  
-        display: flex;
+body{
+    margin: 0 auto;
+    background-color: rgb(194, 194, 200);  
+    display: flex;
 
-    }
-    .table{
-        width:  100%;
-        margin: 10px;
-    }
+}
 
-      
-      .text-center {
-        text-align: center;
-      }
+.table{
+    width:  100%;
+}
+
+    
+.text-center {
+    text-align: center;
+}
 
 
 #headercenter {
     text-align: center;
-  }
+}
 
-  td,
-th {
+
+td,th {
     border: 1px solid #99979d;
     text-align: left;
     padding: 8px;
@@ -32,5 +32,27 @@ th {
     color: white;
 }
 
-  
+#Modules_and_credits{
+    width: 230px; 
+    word-wrap: break-word;
+}  
+
+.wrapped-cell {
+    width: 200px;
+    word-wrap: break-word;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .button-container button {
+    margin-left: 10px;
+  }
+
+  .center-align {
+    text-align: center;
+  }
 

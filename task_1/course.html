@@ -8,34 +8,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <title>University of Northampton Course Details</title>
+    
+
 </head>
 <body>
 
         <div class="container">
-
             <body>
     
-                <p>
-                <h1 class="text-center">University of Northampton - Course Details</h1>
-                </p>
-    
+                <h1 class="text-center">University of Northampton- Course Details</h1>
+
+                <div class="button-container">
+                    <p>Currency convertor : </p>
+                    <button id="euro">Euro</button>
+<button id="dollar">Dollar</button>
+<button id="pound" disabled>Pound</button>
+
+                    
+                  </div>
+                
+
                 <table class="table">
                     <thead>
                         <tr>
                             <th scope="col" id="headercenter">Name</th>
-                            <th scope="col" id="headercenter">Level</th> 
                             <th scope="col" id="headercenter">Duration</th>
                             <th scope="col" id="headercenter">Starting</th> 
                             <th scope="col" id="headercenter">Fees-UK</th> 
                             <th scope="col" id="headercenter">Fees-International</th>
-                            <th scope="col" id="headercenter">Location</th> 
                             <th scope="col" id="headercenter">Course Overview</th> 
+                            <th scope="col" id="headercenter">Fees and funding</th> 
                             <th scope="col" id="headercenter">English Language Requirements</th> 
-                            <th scope="col" id="headercenter">Modules and Credits</th> 
+                            <th scope="col" id="headercenter" class="wrapped-cell">Modules and Credits</th> 
 
                         </tr>
                     </thead>
-                    <tbody id="recipeTable">
+                    <tbody id="courseDetails">
                        
                     </tbody> 
                 </table> 

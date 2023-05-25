@@ -1,25 +1,245 @@
 {
   "courseDetails": [
     {
-    "id":"1",
-    "name":"Computing (Software Engineering) MSc",
-    "link":"https://www.northampton.ac.uk/courses/computing-software-engineering-msc/",
-    "Level":"Postgraduate",
-    "Duration":[{"name":"1 year"},{"name":"2 year"}],
-    "Starting":[{"name":"September"},{"name":"February"}],
-    "Fees":"8010",
-    "Fees_Int":"16500",
-    "Location":"Waterside",
-    "course_Overview":"Study the design of software systems at a greater depth with our Computing (Software Engineering) MSc course. Alongside exploring areas of computer software engineering, you will also have the opportunity to develop your analytics and research skills during this Computing postgraduate degree. Students will complete an individual thesis which will investigate an area they find of particular interest.",
-    "english_language_requirements":"IELTS 6.5 (or equivalent)",
-    "module_and_credits":[{"name":"Intelligent Systems - 20 credits"},
-    {"name":"Databases - 20 credits"},
-    {"name":"Internet Programming - 20 credits"},
-    {"name":"Dissertation - 60 credits"},
-    {"name":"Visual Object Software - 20 credits"},
-    {"name":"Software Engineering - 20 credits"},
-    {"name":"Modern Computer Architecture - 20 credits"}
+      "id": "1",
+      "name": "Computing (Software Engineering) MSc",
+      "link": "https://www.northampton.ac.uk/courses/computing-software-engineering-msc/",
+      "Level": "Postgraduate",
+      "Duration": [{"name": "1 year"}, {"name": "2 year"}],
+      "Starting": [{"name": "September"}, {"name": "February"}],
+      "Fees": "8010",
+      "Fees_Int": "16500",
+      "Location": "Waterside",
+      "course_Overview": "Study the design of software systems at a greater depth with our Computing (Software Engineering) MSc course. Alongside exploring areas of computer software engineering, you will also have the opportunity to develop your analytics and research skills during this Computing postgraduate degree. Students will complete an individual thesis which will investigate an area they find of particular interest.",
+      "english_language_requirements": "IELTS 6.5 (or equivalent)",
+      "module_and_credits": [
+        {"name": "Intelligent Systems - 20 credits"},
+        {"name": "Databases - 20 credits"},
+        {"name": "Internet Programming - 20 credits"},
+        {"name": "Dissertation - 60 credits"},
+        {"name": "Visual Object Software - 20 credits"},
+        {"name": "Software Engineering - 20 credits"},
+        {"name": "Modern Computer Architecture - 20 credits"}
+      ],
+      "Feesandfunding": "2023/24 Tuition Fees\nFees quoted relate to study in the Academic Year 23/24 only and may be subject to inflationary increases in future years.\n\nUK – Full Time: £8,010\nUK – Part Time: £890 per 20 credits\nInternational – Full Time: £16,500"
+    },
+    {
+      "id": "2",
+      "name": "Business Analytics MSc",
+      "link": "https://www.northampton.ac.uk/courses/business-analytics-msc/",
+      "Level": "Postgraduate",
+      "Duration": [{"name": "1 year"}],
+      "Starting": [{"name": "September"}, {"name": "February"}],
+      "Fees": "8010",
+      "Fees_Int": "16500",
+      "Location": "Waterside",
+      "course_Overview": "MSc Business Analytics will equip the learners with the techniques and analytical tools required to understand and engage with complex data with the aim of enhancing business performance. This business analytics masters programme has been designed to help learners gain the skills and qualification needed to pursue a career in business analytics.\n\nBusiness analytics is an area where employers are finding it increasingly difficult to recruit graduates with the right qualifications and skills. There is an increasing demand for skills, but also a significant gap between current business analytics course graduates’ analytical skills and employers’ needs.",
+      "english_language_requirements": "IELTS 6.5 (or equivalent)",
+      "module_and_credits": [
+        {"name": "Strategic Management of IS - 20 credits"},
+        {"name": "Information Systems Methods - 20 credits"},
+        {"name": "Fundamentals of Project Management - 20 credits"},
+        {"name": "Business Research Project - 60 credits"},
+        {"name": "Digital Twins and Internet of Things - 20 credits"},
+        {"name": "Business Intelligence - 20 credits"},
+        {"name": "Applied Systems Analysis - 20 credits"}
+      ],
+      "Feesandfunding": "2023/24 Tuition Fees\nFees quoted relate to study in the Academic Year 23/24 only and may be subject to inflationary increases in future years.\n\nUK – Full Time: £8,010\nUK – Part Time: £890 per 20 credits\nInternational – Full Time: £16,500"
+    },
+    {
+      "id": "3",
+      "name": "International Relations MA",
+      "link": "https://www.northampton.ac.uk/courses/international-relations-ma/",
+      "Level": "Postgraduate",
+      "Duration": [{"name": "1 year"}],
+      "Starting": [{"name": "September"}],
+      "Fees": "8010",
+      "Fees_Int": "16500",
+      "Location": "Waterside",
+      "course_Overview": "In today’s society the emergence of transnational economies, increased global communications, the movement of people, cultures and ideas are reshaping the notions of citizenship and community. With this the increase in sectarian violence and new fundamentalisms are challenging security on an individual to international level. With this in mind, there has never been a more interesting time or a greater need for the study of International Relations.\n\nThe subject gives you a thorough and sensitive knowledge of interests, ethnicities and cultures allowing you to understand the global condition.",
+      "english_language_requirements": "IELTS 6.5 (or equivalent)",
+      "module_and_credits": [
+        {"name": "International Relations Theory: Great Debates, New Directions - 20 credits"},
+        {"name": "European Integration - 10 credits"},
+        {"name": "The Peoples Republic of China: Foreign Policy Dilemmas - 10 credits"},
+        {"name": "The International Politics of the Post-Soviet Space - 10 credits"},
+        {"name": "Major Organisations in the International Order - 20 credits"},
+        {"name": "International Politics of the Middle East - 10 credits"},
+        {"name": "America After 9/11 - 20 credits"},
+        {"name": "The Politics of sub-Sahara Africa - 20 credits"},
+        {"name": "International Relations Research Methods and Dissertation - 60 credits"}
+      ],
+      "Feesandfunding": "2023/24 Tuition Fees\nFees quoted relate to study in the Academic Year 23/24 only and may be subject to inflationary increases in future years.\n\nUK – Full Time: £8,010\nUK – Part Time: £890 per 20 credits\nInternational – Full Time: £16,500"
+
+    },
+    {
+      "id": "4",
+      "name": "Human Resource Management (Top-Up) MA",
+      "link": "https://www.northampton.ac.uk/courses/human-resource-management-topup-ma/",
+      "Level": "Postgraduate",
+      "Duration": [{"name": "1 year"}],
+      "Starting": [{"name": "February"}],
+      "Fees":"2355",
+      "Fees_Int": "N/A",
+      "Location": "Distance Learning",
+      "course_Overview": "Our MA Human Resource Management Top-up degree is specifically designed for those who have completed their Chartered Institute of Personnel and Development (CIPD) Postgraduate Diploma and are looking to complete their postgraduate qualification with a higher degree. The Human Resource Management Top-up will build upon your existing qualification and top it up so that you obtain a qualification at Masters level.\n\nThis course offers you the opportunity to meet your continuing professional requirements as a human resource practitioner and enrich your career prospects.",
+      "english_language_requirements": "IELTS 6.5 (or equivalent)",
+      "module_and_credits": [
+        {"name": "Dissertation and Research Methods - 60 credits"}
+      ],
+      "Feesandfunding": "2023/24 Tuition Fees\nFees quoted relate to study in the Academic Year 23/24 only and may be subject to inflationary increases in future years.\n\nUK – Full Time: £8,010\nUK – Part Time: £890 per 20 credits\nInternational – Full Time: £16,500"
+
+    },
+    {
+      "id": "5",
+      "name": "Logistics and Supply Chain Management MSc",
+      "link": "https://www.northampton.ac.uk/courses/logistics-and-supply-chain-management-msc/",
+      "Level": "Postgraduate",
+      "Duration": [{"name": "1 year"}],
+      "Starting": [{"name": "September"}, {"name": "February"}],
+      "Fees": "8010",
+      "Fees_Int": "16500",
+      "Location": "Waterside",
+      "course_Overview": "Our Masters in Logistics and Supply Chain Management covers every stage of the supply chain, from raw material supply to resource recovery, as well as the many modes of transport. Developments in the last two decades have seen huge investments into technologies necessary to deliver reduced operating costs, shorter lead times and better value for customers. On the supply chain and logistics management course, you will investigate and evaluate the range of current approaches and how this could change through the use of theoretical and industry sources.\n\nYou will develop a strong, conceptual and theoretical understanding of logistics management issues, problems and opportunities, and gain the skills, analytic techniques and tools to make a significant sustained contribution to the achievement of employer goals.",
+      "english_language_requirements": "IELTS 6.5 with a minimum of 6.0 in each band (or equivalent)",
+      "module_and_credits": [
+      {"name": "Managing Operations - 20 credits"},
+      {"name": "International Logistics and Supply Chain - 20 credits"},
+      {"name": "Strategic Issues in Logistics - 20 credits"},
+      {"name": "Applied Logistics, Procurement, and Supply - 20 credits"},
+      {"name": "Risk and Resilience in Holistic Value Chain Management - 20 credits"},
+      {"name": "Business Research Project - 60 credits"},
+      {"name": "Digital Twins and Internet of Things - 20 credits"}
+      ],
+      "Feesandfunding": "2023/24 Tuition Fees\nFees quoted relate to study in the Academic Year 23/24 only and may be subject to inflationary increases in future years.\n\nUK – Full Time: £8,010\nUK – Part Time: £890 per 20 credits\nInternational – Full Time: £16,500"
+
+      },
+      {
+        "id": "6",
+        "name": "Nursing Associate FdSc",
+        "link": "https://www.northampton.ac.uk/courses/nursing-associate-fdsc/",
+        "Level": "Undergraduate",
+        "Duration": [{"name": "2 years"}],
+        "Starting": [{"name": "September"}],
+        "Fees": "9250",
+        "Fees_Int": "14750",
+        "Location": "Waterside",
+        "course_Overview": "Nursing Associates work with registered Nurses to care for patients and service users of different ages and in a range of settings. Nursing Associates are members of the nursing team and are accountable for their own practice. This full-time 2 year nursing associate degree FdSc, with a 50/50 split between theory and practice learning, will prepare you to be a highly skilled autonomous and reflective practitioner who is able to deliver high quality, compassionate, professional and safe care.\n\nSuccessful completion of the nurse associate foundation degree will lead to registration with the Nursing and Midwifery Council (NMC) as a Nursing Associate, allowing you to practice in accordance with the NHS Constitution which is underpinned by the core NHS values. FdSc Nursing Associate has been approved by the Nursing and Midwifery Council (NMC). This means you can be confident that this programme meets the standards of education, training, conduct and performance required for nurses in the UK.",
+        "english_language_requirements": "IELTS 7.0 with no lower than 7.0 in Reading, Listening and Speaking as well as no lower than 6.5 in Writing",
+        "module_and_credits": [
+        {"name": "Interprofessional Education (IPE) - 20 credits"},
+        {"name": "Discovering My Identity as a Nursing Associate - 20 credits"},
+        {"name": "Professionalism and Public Protection for Nursing Associates - 20 credits"},
+        {"name": "Exploring the Evidence Base for Nursing Associates - 20 credits"},
+        {"name": "Developing Competence in Safe, Effective Administration and Optimisation of Medicines for Nursing Associates - 20 credits"},
+        {"name": "Foundations of Practice for Nursing Associates - 60 credits"}
+        ],
+        "Feesandfunding": "2023/24 Tuition Fees\nFees quoted relate to study in the Academic Year 23/24 only and may be subject to inflationary increases in future years.\n\nUK – Full Time: £8,010\nUK – Part Time: £890 per 20 credits\nInternational – Full Time: £16,500"
+      
+        },
+        {
+          "id": "7",
+          "name": "Acting BA (Hons)",
+          "link": "https://www.northampton.ac.uk/courses/acting-ba-hons/",
+          "Level": "Undergraduate",
+          "Duration": [{"name": "3 years"}],
+          "Starting": [{"name": "September"}],
+          "Fees": "9250",
+          "Fees_Int": "14750",
+          "Location": "Innovation Centre",
+          "course_Overview": "Entering the Acting profession as a working stage and screen actor requires high-level skills and knowledge, which the Acting BA (Hons) programme at the University of Northampton is designed to help you develop. You’ll spend 30 hours per week for 30 weeks in practical training, showing your dedication and commitment to the Acting course, which is recognised by both Equity and Spotlight, ensuring that the training provided is relevant, current and of an excellent industry level standard. We follow the ethos of craft, artistry and performance application while encouraging the continual journey of self-discovery, curiosity and the employment of your imagination in truthful characterisations.",
+          "english_language_requirements": "IELTS 6.0 (or equivalent) with a minimum of 5.5 in all bands",
+          "module_and_credits": [
+          {"name": "Acting Methodologies 1 - 40 credits"},
+          {"name": "Vocal Technique for Actors 1 - 30 credits"},
+          {"name": "Actor's Body and Movement 1 - 20 credits"},
+          {"name": "Theories and Histories of Acting - 10 credits"},
+          {"name": "Improvisation for Actors - 20 credits"},
+          {"name": "Vocal Technique for Actors 2 - 20 credits"},
+          {"name": "Acting Methodologies 2 - 30 credits"},
+          {"name": "Actor's Body and Movement 2 - 10 credits"},
+          {"name": "Working with a Director - 30 credits"},
+          {"name": "Media Acting - 30 credits"}
+          ],
+          "Feesandfunding": "2023/24 Tuition Fees\nFees quoted relate to study in the Academic Year 23/24 only and may be subject to inflationary increases in future years.\n\nUK – Full Time: £8,010\nUK – Part Time: £890 per 20 credits\nInternational – Full Time: £16,500"
+
+          },
+          {
+          "id": "8",
+          "name": "International Finance (Top-Up) BSc (Hons)",
+          "link": "https://www.northampton.ac.uk/courses/international-finance-bsc-hons-top-up/",
+          "Level": "Undergraduate",
+          "Duration": [{"name": "1 year"}],
+          "Starting": [{"name": "September"}],
+          "Fees": "9250",
+          "Fees_Int": "15500",
+          "Location": "Waterside",
+          "course_Overview": "The BSc International Finance Top Up equips international students with the knowledge, language, and practical skills required to operate effectively in economies where there is a strong demand for international trade and finance. This highly practical international finance top-up course focuses on contemporary issues in international banking and trading goods globally, and the efficiency of international trade and finance arrangements. There is a strong focus on English language skills throughout the top-up degree in finance, with scaffolded support for language development and opportunities to apply theoretical learning in practical activities.",
+          "english_language_requirements": "IELTS 5.5 (or equivalent) with a minimum of 5.5 in all bands",
+          "module_and_credits": [
+          {"name": "Global Banking - 20 credits"},
+          {"name": "Import & Export Management - 20 credits"},
+          {"name": "International Trade Finance - 20 credits"},
+          {"name": "Banking and Finance Project - 20 credits"},
+          {"name": "Applying Academic Conventions - 20 credits"},
+          {"name": "Academic Conventions for Critical Analysis - 20 credits"}
+          ],
+        "Feesandfunding": "2023/24 Tuition Fees\nFees quoted relate to study in the Academic Year 23/24 only and may be subject to inflationary increases in future years.\n\nUK – Full Time: £8,010\nUK – Part Time: £890 per 20 credits\nInternational – Full Time: £16,500"
+
+          },
+          {
+            "id": "9",
+            "name": "Lift & Escalator Technology HND",
+            "link": "https://www.northampton.ac.uk/courses/lift-escalator-technology-hnd/",
+            "Level": "Undergraduate",
+            "Duration": [{"name": "4 – 6 years"}],
+            "Starting": [{"name": "September"}],
+            "Fees": "920 per 20 Credits",
+            "Fees_Int": "1175 per 20 Credits",
+            "Location": "Distance Learning",
+            "course_Overview": "The Lift and Escalator Technology HND at the University of Northampton is a recognised qualification aimed at students who require a more in-depth academic qualification in Lift Technology. Covering a range of fundamentals to advanced concepts in lift and escalator technology, the course is delivered in a modular format and taught online so that you can study the learning materials, attend any online tutorial sessions, and complete your assessments remotely – albeit within a fixed schedule of dates and deadlines to meet. It allows seamless progression from the Lift and Escalator Technology Certificate/HND into Lift Engineering MSc.",
+            "english_language_requirements": "IELTS 6.0 (or equivalent) with a minimum of 5.5 in all bands",
+            "module_and_credits": [
+            {"name": "Introduction to Engineering Design - 20 credits"},
+            {"name": "Contract Management - 10 credits"},
+            {"name": "Fundamentals of Lift Technology - 20 credits"},
+            {"name": "Lift and Escalator Engineering Project - 20 credits"},
+            {"name": "Contract Management Part 2 - 10 credits"},
+            {"name": "Electrical Fundamentals for Lift and Escalator Technology - 20 credits"},
+            {"name": "Mechanical Fundamentals for Lift and Escalator Technology - 20 credits"},
+            {"name": "Examination and Testing of Lifts - 20 credits"},
+            {"name": "Examination and Testing of Elevators - 10 credits"},
+            {"name": "Escalators and Moving Walks - 10 credits"}
+            ],
+        "Feesandfunding": "2023/24 Tuition Fees\nFees quoted relate to study in the Academic Year 23/24 only and may be subject to inflationary increases in future years.\n\nUK – Full Time: £8,010\nUK – Part Time: £890 per 20 credits\nInternational – Full Time: £16,500"
+
+            },
+            {
+              "id": "10",
+              "name": "Occupational Therapy BSc (Hons)",
+              "link": "https://www.northampton.ac.uk/courses/occupational-therapy-bsc-hons/",
+              "Level": "Undergraduate",
+              "Duration": [{"name": "3 years"}],
+              "Starting": [{"name": "September"}],
+              "Fees": "9250",
+              "Fees_Int": "15750",
+              "Location": "Waterside",
+              "course_Overview": "The BSc Occupational Therapy degree prepares you to work as a registered occupational therapist in the UK and overseas. Occupational Therapy is a health and social care profession that enhances the health and wellbeing of individuals to enable them to achieve their full potential. Occupational therapists work with people of all ages to help them overcome the challenges of everyday life resulting from illness, trauma, and aging.\n\nSuccessful completion of the BSc Occupational Therapy degree will allow you to apply for registration with the Health and Care Professions Council (HCPC). In addition, it will also give you an opportunity to obtain a license to practice and become a member of the Royal College of Occupational Therapists.\n\nTop 16 for Occupational Therapy: The University of Northampton is a top 16 institution for Occupational Therapy courses in the Complete University Guide league tables for 2023.",
+              "english_language_requirements": "IELTS 7.0 (or equivalent) with a minimum of 6.5 in all bands",
+              "module_and_credits": [
+              {"name": "Interprofessional Education (IPE) - 20 credits"},
+              {"name": "Personal and Professional Skills - 20 credits"},
+              {"name": "Foundations of Professional Practice - 40 credits"},
+              {"name": "Understanding Occupational Beings - 20 credits"},
+              {"name": "Functional Human Sciences - 40 credits"},
+              {"name": "Occupational Engagement - 40 credits"},
+              {"name": "Professional Skills for Practice - 20 credits"},
+              {"name": "Research Methods - 20 credits"},
+              {"name": "Development of Professional Practice - 40 credits"}
+              ],
+        "Feesandfunding": "2023/24 Tuition Fees\nFees quoted relate to study in the Academic Year 23/24 only and may be subject to inflationary increases in future years.\n\nUK – Full Time: £8,010\nUK – Part Time: £890 per 20 credits\nInternational – Full Time: £16,500"
+
+              }
+    
   ]
-  }
-]
 }
