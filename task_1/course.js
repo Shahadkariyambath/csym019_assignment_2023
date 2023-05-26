@@ -10,40 +10,29 @@
             let datatxt="";
             $.each(response.courseDetails,function(index){
               
-              //using stringify function for converting the json data as it was having multipe sets of data inside ingredients, steps and nutrition.
-              
-              
-            //   var ingredients=JSON.stringify(response.courseDetails[index].ingredients);
-            //   console.log(ingredients);
-            //   console.log(JSON.parse(ingredients));
-  
-            //   var steps=JSON.stringify(response.courseDetails[index].steps);
-            //   console.log(steps);
-            //   console.log(JSON.parse(steps));
-  
             
-              const DurationList = document.createElement("ul");
-              response.courseDetails[index].Duration.forEach((Duration) => {
-                 const DurationItem = document.createElement("li");
-                 DurationItem.textContent = Duration.name;
-                 DurationList.appendChild(DurationItem);
-                 });
+            const DurationList = document.createElement("ul");
+            response.courseDetails[index].Duration.forEach((Duration) => {
+            const DurationItem = document.createElement("li");
+            DurationItem.textContent = Duration.name;
+            DurationList.appendChild(DurationItem);
+            });
 
-                const StartingList = document.createElement("ul");
-                response.courseDetails[index].Starting.forEach((Starting) => {
-                const StartingItem = document.createElement("li");
-                StartingItem.textContent = Starting.name;
-                StartingList.appendChild(StartingItem);
-                });
+            const StartingList = document.createElement("ul");
+            response.courseDetails[index].Starting.forEach((Starting) => {
+            const StartingItem = document.createElement("li");
+            StartingItem.textContent = Starting.name;
+            StartingList.appendChild(StartingItem);
+            });
                 
             const module_and_creditsList = document.createElement("ul");
             response.courseDetails[index].module_and_credits.forEach((module_and_credits) => {
-                const module_and_creditsItem = document.createElement("li");
-                module_and_creditsItem.textContent = module_and_credits.name;
-                module_and_creditsList.appendChild(module_and_creditsItem);
-                });
+            const module_and_creditsItem = document.createElement("li");
+            module_and_creditsItem.textContent = module_and_credits.name;
+            module_and_creditsList.appendChild(module_and_creditsItem);
+            });
 
-              datatxt+="<tr><td><a href='"+response.courseDetails[index].link+"'>" +response.courseDetails[index].name+"</a><br><br><b>Level  </b>"+response.courseDetails[index].Level+"<br><br> <b>Location  </b>  "+response.courseDetails[index].Location+
+              datatxt+="<tr><td><a href='"+response.courseDetails[index].link+"'>" +response.courseDetails[index].name+"</a><br><br><b>Level : <br></b>"+response.courseDetails[index].Level+"<br><br> <b>Location  : <br>  </b>  "+response.courseDetails[index].Location+
               "</td><td >"
               +DurationList.innerHTML+"</td><td >"
               +StartingList.innerHTML+"</td><td data-target data-original class='center-align'>"
