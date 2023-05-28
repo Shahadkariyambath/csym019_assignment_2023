@@ -17,7 +17,7 @@ if (isset($_POST['title'])) {
 
     // $result = fetchARecordWithTwoWhereClause('user', 'email', $uname, 'password', $password);
 
-    $stmt = $GLOBALS['pdo']->prepare('INSERT INTO coursedetail(title, location, overview, highlight, coursedetail, entryrequirement, feesfunding, faqs) VALUES (:title,:location,:overview, :highlight, :coursedetail, :entryrequirement, :feesfunding, :faqs);');
+    $stmt = $pdo->prepare('INSERT INTO coursedetail(title, location, overview, highlight, coursedetail, entryrequirement, feesfunding, faqs) VALUES (:title,:location,:overview, :highlight, :coursedetail, :entryrequirement, :feesfunding, :faqs);');
     $criteria = [
         'title' => $_POST['title'],
         'location' => $_POST['location'],
@@ -36,7 +36,7 @@ if (isset($_POST['title'])) {
         //if there is an matching row, then the page will redirected to home.php
         // echo '<script>alert("You have entered new course.");</script>';
 
-        $courseid = $GLOBALS['pdo']->lastInsertId();
+        $courseid = $pdo->lastInsertId();
 
         $modules = $_POST['module'];
         $credits = $_POST['credits'];
@@ -47,7 +47,7 @@ if (isset($_POST['title'])) {
             $creditValue = $credits[$i];
 
 
-            $stmt2 = $GLOBALS['pdo']->prepare('INSERT INTO modulecredits( courseid, module, credit) VALUES (:courseid,:module,:credits);');
+            $stmt2 = $pdo->prepare('INSERT INTO modulecredits( courseid, module, credit) VALUES (:courseid,:module,:credits);');
 
             $criteria2 = [
                 'courseid' => $courseid,
