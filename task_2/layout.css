@@ -5,6 +5,11 @@ body {
     grid-template-areas: "header header"
                             "nav main"
                             "footer footer";
+
+                            /* margin: 0;
+                            padding: 0;
+                            position: relative;
+                            min-height: 100vh; */
 }
 
 header {
@@ -53,10 +58,15 @@ main {
 }
 
 footer {
-    padding-top: 2em;
-    background-color: #555;
-    color: white;
+
+    position: fixed;
     grid-area: footer;
+    bottom: 0;
+    left: 0;
+    background-color: #555;
+    text-align: center;
+
+
 }
 
 .note {
@@ -109,3 +119,18 @@ footer {
     padding-left: calc(var(--bs-gutter-x) * .5);
 }
 
+td,th {
+    border: 1px solid #99979d;
+    text-align: left;
+    padding: 8px;
+    min-width: 100px;
+}
+
+th {
+    background-color: #656565;
+    /* color: white; */
+}
+
+/* #headercenter {
+    text-align: center;
+} */
