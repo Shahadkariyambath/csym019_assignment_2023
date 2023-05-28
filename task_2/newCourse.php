@@ -1,3 +1,89 @@
+<?php
+include 'dbinstance.php'; // this will include the dbinstance.php file to access the mysql database 
+// echo '<script>alert("You Hellow welcome .");</script>';
+
+if (isset($_POST['title'])) {
+
+    // $title = $_POST['title']; //the username is assigned to a variable uname
+    // $location = $_POST['location']; //the username is assigned to a variable uname
+    // $overview = $_POST['overview']; //the username is assigned to a variable uname
+    // $highlight = $_POST['highlight']; //the username is assigned to a variable uname
+    // $coursedetail = $_POST['coursedetail']; //the username is assigned to a variable uname
+    // $entryrequirement = $_POST['entryrequirement']; //the username is assigned to a variable uname
+    // $feesfunding = $_POST['feesfunding']; //the username is assigned to a variable uname
+    // $faqs = $_POST['faqs']; //the username is assigned to a variable uname
+    // $module = $_POST['module']; //the username is assigned to a variable uname
+    // $credits = $_POST['credits']; //password is assigned to a variable password
+
+    // $result = fetchARecordWithTwoWhereClause('user', 'email', $uname, 'password', $password);
+
+    $stmt = $GLOBALS['pdo']->prepare('INSERT INTO coursedetail(title, location, overview, highlight, coursedetail, entryrequirement, feesfunding, faqs) VALUES (:title,:location,:overview, :highlight, :coursedetail, :entryrequirement, :feesfunding, :faqs);');
+    $criteria = [
+        'title' => $_POST['title'],
+        'location' => $_POST['location'],
+        'overview' => $_POST['overview'],
+        'highlight' => $_POST['highlight'],
+        'coursedetail' => $_POST['coursedetail'],
+        'entryrequirement' => $_POST['entryrequirement'],
+        'feesfunding' => $_POST['feesfunding'],
+        'faqs' => $_POST['faqs']
+
+    ];
+
+    $result = $stmt->execute($criteria);
+
+    if ($result) {
+        //if there is an matching row, then the page will redirected to home.php
+        // echo '<script>alert("You have entered new course.");</script>';
+
+        $courseid = $GLOBALS['pdo']->lastInsertId();
+
+        $modules = $_POST['module'];
+        $credits = $_POST['credits'];
+
+        // Iterate over the arrays to access the values
+        for ($i = 0; $i < count($modules); $i++) {
+            $moduleValue = $modules[$i];
+            $creditValue = $credits[$i];
+
+
+            $stmt2 = $GLOBALS['pdo']->prepare('INSERT INTO modulecredits( courseid, module, credit) VALUES (:courseid,:module,:credits);');
+
+            $criteria2 = [
+                'courseid' => $courseid,
+                'module' => $moduleValue,
+                'credits' => $creditValue,
+
+            ];
+
+            $result2 = $stmt2->execute($criteria2);
+
+            // Process the values as needed
+            // echo "Module: " . $moduleValue . ", Credits: " . $creditValue . "<br>";
+        }
+
+
+
+
+
+
+
+        //if there is an matching row, then the page will redirected to home.php
+        echo '<script>alert("New course added.");</script>';
+
+        header('location:courseSelectionForm.php');
+
+        // header('location:courseSelectionForm.php');
+    } else {
+        // if there is no matching row then it will print " Something went Wrong"
+        echo '<script>alert("You have entered an incorrect username or password.");</script>';
+    }
+
+
+
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +93,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
+
+<script>
+    //Ingredients
+
+
+    $(document).ready(function () {
+        var name = $(".modulecredits");
+        var add_button = $(".add_modulecredits");
+
+        var count = 1;
+        $(add_button).click(function (e) {
+            e.preventDefault();
+            count++;
+            $(name).append('<div class="row note"> <div class="col-sm-6"><input type="text" name="module[]" class="form-control" placeholder="Module"></div><div class="col-sm-4"><input type="number" name="credits[]" class="form-control" placeholder="Credits"></div><button href="#" class="delete" id="deletebtnstyle">Delete</button></div>');
+        });
+
+        $(name).on("click", ".delete", function (e) {
+            e.preventDefault();
+            $(this).parent('div').remove();
+            count--;
+        });
+    });
+</script>
 
 <body>
     <header>
@@ -21,7 +132,11 @@
     </nav>
     <main>
         <h2>Please Enter new course details</h2>
-        <form action="post" action="#">
+
+        <!-- <div class="form-content">
+            <div class="form-items"> -->
+
+        <form method="POST" action="#">
             <!-- <div class="sketch"> -->
             <!-- <img src="./sampleEntryForm.png" alt="New course entry form"> -->
 
@@ -72,17 +187,37 @@
                     placeholder="Enter the FAQs"></textarea>
             </div>
 
+            <div class="form-group">
+                <h2 class="col-sm-2 col-form-label col-form-label-lg">Module & Credits</h2>
+                <div class="modulecredits">
+                    <button class="add_modulecredits">Add Module & Credits +
+                    </button>
+
+                    <div class="row note">
+                        <div class="col-sm-6">
+                            <input type="text" name="module[]" class="form-control" placeholder="Module">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="number" name="credits[]" class="form-control" placeholder="Credits">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
 
             <!-- </div> -->
-            <div class="addmore">
+            <div class="addmore note">
                 <!-- add more feilds for the remaining recipe info ...-->
-                <p class="note">
+                <!-- <p class="note">
 
-                </p>
+                </p> -->
                 <input type="submit" value="Add Course" />
                 <!--input type="reset" value="Cancel" /-->
             </div>
         </form>
+        <!-- </div>
+        </div> -->
     </main>
     <footer>&copy; CSYM019 2023</footer>
 </body>

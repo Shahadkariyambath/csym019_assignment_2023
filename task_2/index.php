@@ -25,16 +25,8 @@ if (isset($_POST['username'])) {
 
     if ($resultAll) {
 
-        $response = json_encode($resultAll);
-        $data = json_decode($response, true); // Decodes the JSON array into an associative array
-        $id = $data[0]['id'];
-        $name = $data[0]['name'];
 
-        // Used session to store user details
-        $_SESSION['user_id'] = $id;
-        $_SESSION['user_name'] = $name;
-
-        //if there is an matching row, then the page will redirected to home.php
+        //if there is an matching row, then the page will redirected to courseSelectionForm.php
         header('location:courseSelectionForm.php');
     } else {
         // if there is no matching row then it will print " Something went Wrong"
