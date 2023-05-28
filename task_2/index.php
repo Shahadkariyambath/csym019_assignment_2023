@@ -1,7 +1,7 @@
 <!-- login.php is used for login into the page using username and password data -->
 
 <?php
-include 'dbinstance.php'; // this will include the connect.php file to access the mysql database 
+include 'dbinstance.php'; // this will include the dbinstance.php file to access the mysql database 
 ?>
 
 
@@ -53,7 +53,7 @@ if (isset($_POST['username'])) {
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="layout.css">
     <title>University of Northampton Course Details</title>
 </head>
