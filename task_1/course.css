@@ -1,25 +1,22 @@
+/* Body element styling */
 body{
     margin: 0 auto;
-    background-color: rgb(194, 194, 200);  
+    background-color: rgb(194, 194, 200);  /* Setting up background-color   */
     display: flex;
 
 }
 
+/* Setting up table width   */
 .table{
     width:  100%;
 }
 
-    
+/* Align the text in center  */
 .text-center {
     text-align: center;
 }
 
-
-#headercenter {
-    text-align: center;
-}
-
-
+/* This code applies consistent border, text alignment, padding, and minimum width to both table cells and table headers */
 td,th {
     border: 1px solid #99979d;
     text-align: left;
@@ -27,32 +24,35 @@ td,th {
     min-width: 100px;
 }
 
+/* This code sets the background color of table headers to #656565 and the text color to white. It provides a visual distinction for table headers compared to regular table cells */
 th {
     background-color: #656565;
     color: white;
 }
 
+/* This code sets the width of the element with ID Modules_and_credits to 230px. It also enables word wrapping within the element using word-wrap: break-word*/
 #Modules_and_credits{
     width: 230px; 
     word-wrap: break-word;
 }  
 
+/* This code sets the width to 200px and enables word wrapping for elements with the class .wrapped-cell */
 .wrapped-cell {
     width: 200px;
     word-wrap: break-word;
   }
 
+
+/* This code sets the display to flex for elements with the class .button-container, aligns the items to the end of the container horizontally using justify-content: flex-end, and aligns the items vertically in the center using align-items: center */
   .button-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
 
+  /* Add left margin to buttons */
   .button-container button {
     margin-left: 10px;
   }
 
-  .center-align {
-    text-align: center;
-  }
 
