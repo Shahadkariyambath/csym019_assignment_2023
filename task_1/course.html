@@ -1,48 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./course.css">
-    <script src="./course.js"> </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!DOCTYPE html> <!-- HTML5 doctype declaration -->
 
-    <title>University of Northampton Course Details</title>
+<html lang="en"><!-- Opening of the HTML document with the lang attribute set to "en" for English -->
+
+<head><!-- Head section of the HTML document -->
+
+    <meta charset="UTF-8"><!-- Meta tag to specify the character encoding as UTF-8 -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Meta tag to set the X-UA-Compatible header to IE=edge -->
+
+    <link rel="stylesheet" href="./course.css"><!-- Link tag to include an external stylesheet file named "course.css" -->
+
+    <script src="./course.js"> </script><!-- Script tag to include an external JavaScript file named "course.js" -->
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- Script tag to include the jQuery library from the CDN (Content Delivery Network) -->
+
+
+    <title>University of Northampton Course Details</title> <!-- Title of the HTML document -->
     
 
 </head>
 <body>
+    <!-- start of the body tag., body tag defines the content of document-->
 
-        <div class="container">
-            <body>
+        <div class="container"> <!-- Container element -->
+            
     
-                <h1 class="text-center">University of Northampton- Course Details</h1>
+                <h1 class="text-center">University of Northampton- Course Details</h1> <!-- Heading element with "text-center" class -->
 
+                <!-- Button container element -->
                 <div class="button-container">
+
+                    <!-- Paragraph element with bold text -->
                     <p><b>Currency convertor :</b> </p>
+
+                    <!-- Button element with "euro" id -->
                     <button id="euro">Euro</button>
+
+                    <!-- Button element with "dollar" id -->
                     <button id="dollar">Dollar</button>
+
+                    <!-- Button element with "pound" id and disabled attribute -->  
                     <button id="pound" disabled>Pound</button>                   
                   </div>
                 
 
-                <table class="table">
-                    <thead>
+                <!-- start of the table tag., table tag is to create a table in the html page given class name as table-->
+                <table class="table"> 
+                    <!-- thead tag is used to group header content in an HTML table.-->
+                    <thead> 
+                        <!--tr tag defines a row in an HTML table and here defines the heading of the table-->
                         <tr>
-                            <th scope="col" id="headercenter">Name</th>
-                            <th scope="col" id="headercenter">Duration</th>
-                            <th scope="col" id="headercenter">Starting</th> 
-                            <th scope="col" id="headercenter">Fees-UK</th> 
-                            <th scope="col" id="headercenter">Fees-International</th>
-                            <th scope="col" id="headercenter">Course Overview</th> 
-                            <th scope="col" id="headercenter">Fees and funding</th> 
-                            <th scope="col" id="headercenter">English Language Requirements</th> 
-                            <th scope="col" id="headercenter" class="wrapped-cell">Modules and Credits</th> 
+                            <!-- Table header cell with "text-center" class -->
+
+                            <th scope="col" class="text-center">Name</th> <!-- Heading of course name-->
+                            <th scope="col" class="text-center">Duration</th> <!-- Heading of course Duration-->
+                            <th scope="col" class="text-center">Starting</th> <!-- Heading of course Starting-->
+                            <th scope="col" class="text-center">Fees-UK</th> <!-- Heading of course Fees-UK-->
+                            <th scope="col" class="text-center">Fees-International</th> <!-- Heading of course Fees-International-->
+                            <th scope="col" class="text-center">Course Overview</th> <!-- Heading of course Overview-->
+                            <th scope="col" class="text-center">Fees and funding</th> <!-- Heading of course Fees and funding-->
+                            <th scope="col" class="text-center">English Language Requirements</th> <!-- Heading of course English Language Requirements-->
+                            <th scope="col" class="wrapped-cell text-center">Modules and Credits</th> <!-- Heading of course Modules and Credits-->
 
                         </tr>
                     </thead>
                     <tbody id="courseDetails">
-                       
+                       <!--tbody tag defines the body of html table with id name courseDetails -->
+                    <!-- data taken from JSON file using javascript file-->
                     </tbody> 
                 </table> 
         </div> 
