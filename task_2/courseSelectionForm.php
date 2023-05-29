@@ -35,7 +35,7 @@
         </div> -->
         <div class="container">
 
-            <form action="./sampleReport.png" class="addmore" method="GET">
+            <form action="./sampleCourseReport.php" class="addmore" method="GET">
 
                 <input type="submit" value="Create Course Report" />
                 <!--input type="reset" value="Cancel" /-->
@@ -64,9 +64,9 @@
                         include 'dbinstance.php';
 
                         //data is fetched to the table detail using foreach loop and the sql statement will be called
-                        $statement = $pdo->prepare("select * from coursedetail order by title");
-                        if ($statement->execute()) {
-                            foreach ($statement as $row) {
+                        $stmt = $pdo->prepare("select * from coursedetail order by title");
+                        if ($stmt->execute()) {
+                            foreach ($stmt as $row) {
 
                                 $id = $row['id'];
                                 $title = $row['title'];
