@@ -87,6 +87,8 @@ include 'dbinstance.php';
 
 <body>
     <header>
+        <button class="btn btn-primary" style="float: right"><a href="logout.php" class="text-light">Logout</a></button>
+
         <h3>CSYM019 - UNIVERSITY COURSES</h3>
     </header>
     <nav>
@@ -105,6 +107,7 @@ include 'dbinstance.php';
             <p class="blueNote">IMPORTANT NOTE: ALL CHARTS MUST BE CREATED USING THE <a
                     href="https://www.chartjs.org">Chartjs</a> LIBRARY.</p>
         </div> -->
+
 
         <h3 class="text-center"><b>Course Report</b></h3>
         <table class="table table-bordered">

@@ -121,6 +121,8 @@ if (isset($_POST['title'])) {
 
 <body>
     <header>
+        <button class="btn btn-primary" style="float: right"><a href="logout.php" class="text-light">Logout</a></button>
+
         <h3>CSYM019 - UNIVERSITY COURSES</h3>
     </header>
     <nav>

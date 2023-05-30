@@ -11,6 +11,8 @@
 
 <body>
     <header>
+        <button class="btn btn-primary" style="float: right"><a href="logout.php" class="text-light">Logout</a></button>
+
         <h3>CSYM019 - UNIVERSITY COURSES</h3>
     </header>
     <nav>
@@ -29,6 +31,7 @@
     </script>
 
     <main>
+
         <h3>Selection Form</h3>
         <!-- <div class="sketch">
             <img src="./sampleCourseSelectionScreen.png" alt="Course Selection Screen">
