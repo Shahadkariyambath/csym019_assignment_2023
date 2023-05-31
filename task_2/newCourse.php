@@ -1,21 +1,8 @@
 <?php
 include 'dbinstance.php'; // this will include the dbinstance.php file to access the mysql database 
-// echo '<script>alert("You Hellow welcome .");</script>';
 
 if (isset($_POST['title'])) {
 
-    // $title = $_POST['title']; //the username is assigned to a variable uname
-    // $location = $_POST['location']; //the username is assigned to a variable uname
-    // $overview = $_POST['overview']; //the username is assigned to a variable uname
-    // $highlight = $_POST['highlight']; //the username is assigned to a variable uname
-    // $coursedetail = $_POST['coursedetail']; //the username is assigned to a variable uname
-    // $entryrequirement = $_POST['entryrequirement']; //the username is assigned to a variable uname
-    // $feesfunding = $_POST['feesfunding']; //the username is assigned to a variable uname
-    // $faqs = $_POST['faqs']; //the username is assigned to a variable uname
-    // $module = $_POST['module']; //the username is assigned to a variable uname
-    // $credits = $_POST['credits']; //password is assigned to a variable password
-
-    // $result = fetchARecordWithTwoWhereClause('user', 'email', $uname, 'password', $password);
 
     $stmt = $pdo->prepare('INSERT INTO coursedetail(title, location, overview, highlight, coursedetail, entryrequirement, feesfunding, faqs) VALUES (:title,:location,:overview, :highlight, :coursedetail, :entryrequirement, :feesfunding, :faqs);');
     $criteria = [
@@ -136,6 +123,7 @@ if (isset($_POST['title'])) {
 
         <!-- <div class="form-content">
             <div class="form-items"> -->
+
 
         <form method="POST" action="#">
             <!-- <div class="sketch"> -->
