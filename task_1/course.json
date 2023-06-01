@@ -3,6 +3,7 @@
     {
       "id": "1",
       "name": "Computing (Software Engineering) MSc",
+      "icon": "./icon/icons8-computing-66.png",
       "link": "https://www.northampton.ac.uk/courses/computing-software-engineering-msc/",
       "Level": "Postgraduate",
       "Duration": [{"name": "1 year"}, {"name": "2 year"}],
@@ -26,6 +27,7 @@
     {
       "id": "2",
       "name": "Business Analytics MSc",
+      "icon": "./icon/icons8-web-analytics-50.png",
       "link": "https://www.northampton.ac.uk/courses/business-analytics-msc/",
       "Level": "Postgraduate",
       "Duration": [{"name": "1 year"}],
@@ -49,6 +51,7 @@
     {
       "id": "3",
       "name": "International Relations MA",
+      "icon": "./icon/icons8-international-50.png",
       "link": "https://www.northampton.ac.uk/courses/international-relations-ma/",
       "Level": "Postgraduate",
       "Duration": [{"name": "1 year"}],
@@ -75,6 +78,7 @@
     {
       "id": "4",
       "name": "Human Resource Management (Top-Up) MA",
+      "icon": "./icon/icons8-staff-80.png",
       "link": "https://www.northampton.ac.uk/courses/human-resource-management-topup-ma/",
       "Level": "Postgraduate",
       "Duration": [{"name": "1 year"}],
@@ -93,6 +97,7 @@
     {
       "id": "5",
       "name": "Logistics and Supply Chain Management MSc",
+      "icon": "./icon/icons8-supply-chain-50.png",
       "link": "https://www.northampton.ac.uk/courses/logistics-and-supply-chain-management-msc/",
       "Level": "Postgraduate",
       "Duration": [{"name": "1 year"}],
@@ -117,6 +122,7 @@
       {
         "id": "6",
         "name": "Nursing Associate FdSc",
+        "icon": "./icon/icons8-nursing-50.png",
         "link": "https://www.northampton.ac.uk/courses/nursing-associate-fdsc/",
         "Level": "Undergraduate",
         "Duration": [{"name": "2 years"}],
@@ -140,6 +146,7 @@
         {
           "id": "7",
           "name": "Acting BA (Hons)",
+          "icon": "./icon/icons8-acting-50.png",
           "link": "https://www.northampton.ac.uk/courses/acting-ba-hons/",
           "Level": "Undergraduate",
           "Duration": [{"name": "3 years"}],
@@ -167,6 +174,7 @@
           {
           "id": "8",
           "name": "International Finance (Top-Up) BSc (Hons)",
+          "icon": "./icon/icons8-international-finance-64.png",
           "link": "https://www.northampton.ac.uk/courses/international-finance-bsc-hons-top-up/",
           "Level": "Undergraduate",
           "Duration": [{"name": "1 year"}],
@@ -190,6 +198,7 @@
           {
             "id": "9",
             "name": "Lift & Escalator Technology HND",
+            "icon": "./icon/icons8-lift-50.png",
             "link": "https://www.northampton.ac.uk/courses/lift-escalator-technology-hnd/",
             "Level": "Undergraduate",
             "Duration": [{"name": "4 – 6 years"}],
@@ -217,6 +226,7 @@
             {
               "id": "10",
               "name": "Occupational Therapy BSc (Hons)",
+              "icon": "./icon/icons8-therapy-50.png",
               "link": "https://www.northampton.ac.uk/courses/occupational-therapy-bsc-hons/",
               "Level": "Undergraduate",
               "Duration": [{"name": "3 years"}],

@@ -35,8 +35,9 @@ body of the html */
             module_and_creditsList.appendChild(module_and_creditsItem);
             });
 
+            console.log(response.courseDetails[index].icon);
             // Generate the HTML table row (tr) with the data obtained from the JSON response
-              datatxt+="<tr><td><a href='"+response.courseDetails[index].link+"'>" +response.courseDetails[index].name+"</a><br><br><b>Level : <br></b>"+response.courseDetails[index].Level+"<br><br> <b>Location  : <br>  </b>  "+response.courseDetails[index].Location+ //In the first cell, it will show the course name, location and level
+              datatxt+="<tr><td><img src="+response.courseDetails[index].icon+"><br><a href='"+response.courseDetails[index].link+"'>" +response.courseDetails[index].name+"</a><br><br><b>Level : <br></b>"+response.courseDetails[index].Level+"<br><br> <b>Location  : <br>  </b>  "+response.courseDetails[index].Location+ //In the first cell, it will show the course name, location and level
               "</td><td >"
               +DurationList.innerHTML+"</td><td >"  //in the next cell, it will show the duration of courses will be shown
               +StartingList.innerHTML+"</td><td data-target data-original class='text-center'>"  //in the next cell, it will show the starting of courses will be shown
