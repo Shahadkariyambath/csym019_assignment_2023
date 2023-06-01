@@ -50,28 +50,6 @@ if (isset($_POST["title"])) {
 
 </head>
 
-<script>
-    //Ingredients
-
-
-    $(document).ready(function () {
-        var name = $(".modulecredits");
-        var add_button = $(".add_modulecredits");
-
-        var count = 1;
-        $(add_button).click(function (e) {
-            e.preventDefault();
-            count++;
-            $(name).append('<div class="row note"> <div class="col-sm-6"><input type="text" name="module[]" class="form-control" placeholder="Module"></div><div class="col-sm-4"><input type="number" name="credits[]" class="form-control" placeholder="Credits"></div><button href="#" class="delete" id="deletebtnstyle">Delete</button></div>');
-        });
-
-        $(name).on("click", ".delete", function (e) {
-            e.preventDefault();
-            $(this).parent('div').remove();
-            count--;
-        });
-    });
-</script>
 
 <body>
     <header>
