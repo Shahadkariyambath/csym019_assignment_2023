@@ -62,7 +62,10 @@ if (
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="layout.css">
+    <!-- This code adds a link to the Bootstrap CSS file from the specified URL, allowing you to apply Bootstrap styles to your web page. -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <title>University of Northampton Course Details</title>
 </head>
 
