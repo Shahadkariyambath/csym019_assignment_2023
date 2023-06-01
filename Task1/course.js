@@ -35,7 +35,6 @@ body of the html */
           module_and_creditsList.appendChild(module_and_creditsItem);
           });
 
-          console.log(response.courseDetails[index].icon);
           // Generate the HTML table row (tr) with the data obtained from the JSON response
             datatxt+="<tr><td><img src="+response.courseDetails[index].icon+"><br><a href='"+response.courseDetails[index].link+"'>" +response.courseDetails[index].name+"</a><br><br><b>Level : <br></b>"+response.courseDetails[index].Level+"<br><br> <b>Location  : <br>  </b>  "+response.courseDetails[index].Location+ //In the first cell, it will show the course name, icon, location and level
             "</td><td >"
@@ -142,7 +141,4 @@ document.addEventListener("DOMContentLoaded", function() {// Event listener to w
     button.disabled = false; // Set the button as enabled
   }
 
-
 });
-
- 
