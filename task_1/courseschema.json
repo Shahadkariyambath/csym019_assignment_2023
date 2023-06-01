@@ -14,6 +14,9 @@
             "name": {
               "type": "string"
             },
+            "icon": {
+              "type": "string"
+            },
             "link": {
               "type": "string"
             },
@@ -178,6 +181,7 @@
           "required": [
             "id",
             "name",
+            "icon",
             "link",
             "Level",
             "Duration",
@@ -200,6 +204,9 @@
             "name": {
               "type": "string"
             },
+            "icon": {
+              "type": "string"
+            },
             "link": {
               "type": "string"
             },
@@ -353,6 +360,7 @@
           "required": [
             "id",
             "name",
+            "icon",
             "link",
             "Level",
             "Duration",
@@ -375,6 +383,9 @@
             "name": {
               "type": "string"
             },
+            "icon": {
+              "type": "string"
+            },
             "link": {
               "type": "string"
             },
@@ -539,6 +550,7 @@
           "required": [
             "id",
             "name",
+            "icon",
             "link",
             "Level",
             "Duration",
@@ -561,6 +573,9 @@
             "name": {
               "type": "string"
             },
+            "icon": {
+              "type": "string"
+            },
             "link": {
               "type": "string"
             },
@@ -637,6 +652,7 @@
           "required": [
             "id",
             "name",
+            "icon",
             "link",
             "Level",
             "Duration",
@@ -659,6 +675,9 @@
             "name": {
               "type": "string"
             },
+            "icon": {
+              "type": "string"
+            },
             "link": {
               "type": "string"
             },
@@ -812,6 +831,7 @@
           "required": [
             "id",
             "name",
+            "icon",
             "link",
             "Level",
             "Duration",
@@ -834,6 +854,9 @@
             "name": {
               "type": "string"
             },
+            "icon": {
+              "type": "string"
+            },
             "link": {
               "type": "string"
             },
@@ -965,6 +988,7 @@
           "required": [
             "id",
             "name",
+            "icon",
             "link",
             "Level",
             "Duration",
@@ -987,6 +1011,9 @@
             "name": {
               "type": "string"
             },
+            "icon": {
+              "type": "string"
+            },
             "link": {
               "type": "string"
             },
@@ -1162,6 +1189,7 @@
           "required": [
             "id",
             "name",
+            "icon",
             "link",
             "Level",
             "Duration",
@@ -1184,6 +1212,9 @@
             "name": {
               "type": "string"
             },
+            "icon": {
+              "type": "string"
+            },
             "link": {
               "type": "string"
             },
@@ -1315,6 +1346,7 @@
           "required": [
             "id",
             "name",
+            "icon",
             "link",
             "Level",
             "Duration",
@@ -1337,6 +1369,9 @@
             "name": {
               "type": "string"
             },
+            "icon": {
+              "type": "string"
+            },
             "link": {
               "type": "string"
             },
@@ -1512,6 +1547,7 @@
           "required": [
             "id",
             "name",
+            "icon",
             "link",
             "Level",
             "Duration",
@@ -1534,6 +1570,9 @@
             "name": {
               "type": "string"
             },
+            "icon": {
+              "type": "string"
+            },
             "link": {
               "type": "string"
             },
@@ -1698,6 +1737,7 @@
           "required": [
             "id",
             "name",
+            "icon",
             "link",
             "Level",
             "Duration",

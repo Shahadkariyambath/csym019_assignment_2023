@@ -1,21 +1,7 @@
 <?php
 include 'dbinstance.php'; // this will include the dbinstance.php file to access the mysql database 
-// echo '<script>alert("You Hellow welcome .");</script>';
 
 if (isset($_POST['title'])) {
-
-    // $title = $_POST['title']; //the username is assigned to a variable uname
-    // $location = $_POST['location']; //the username is assigned to a variable uname
-    // $overview = $_POST['overview']; //the username is assigned to a variable uname
-    // $highlight = $_POST['highlight']; //the username is assigned to a variable uname
-    // $coursedetail = $_POST['coursedetail']; //the username is assigned to a variable uname
-    // $entryrequirement = $_POST['entryrequirement']; //the username is assigned to a variable uname
-    // $feesfunding = $_POST['feesfunding']; //the username is assigned to a variable uname
-    // $faqs = $_POST['faqs']; //the username is assigned to a variable uname
-    // $module = $_POST['module']; //the username is assigned to a variable uname
-    // $credits = $_POST['credits']; //password is assigned to a variable password
-
-    // $result = fetchARecordWithTwoWhereClause('user', 'email', $uname, 'password', $password);
 
     $stmt = $pdo->prepare('UPDATE coursedetail SET title=:title,location=:location,overview=:overview,highlight=:highlight,coursedetail=:coursedetail,entryrequirement=:entryrequirement,feesfunding=:feesfunding,faqs=:faqs WHERE id = :id ;');
     $criteria = [
@@ -34,43 +20,7 @@ if (isset($_POST['title'])) {
     $result = $stmt->execute($criteria);
 
     if ($result) {
-        //if there is an matching row, then the page will redirected to home.php
-        // echo '<script>alert("You have entered new course.");</script>';
-
-        // $courseid = $GLOBALS['pdo']->lastInsertId();
-
-        // $modules = $_POST['module'];
-        // $credits = $_POST['credits'];
-
-        // // Iterate over the arrays to access the values
-        // for ($i = 0; $i < count($modules); $i++) {
-        //     $moduleValue = $modules[$i];
-        //     $creditValue = $credits[$i];
-
-
-        //     $stmt2 = $GLOBALS['pdo']->prepare('INSERT INTO modulecredits( courseid, module, credit) VALUES (:courseid,:module,:credits);');
-
-        //     $criteria2 = [
-        //         'courseid' => $courseid,
-        //         'module' => $moduleValue,
-        //         'credits' => $creditValue,
-
-        //     ];
-
-        //     $result2 = $stmt2->execute($criteria2);
-
-        //     // Process the values as needed
-        //     // echo "Module: " . $moduleValue . ", Credits: " . $creditValue . "<br>";
-        // }
-
-
-
-
-
-
-
-        //if there is an matching row, then the page will redirected to home.php
-        echo '<script>alert("New course added.");</script>';
+        echo '<script>alert("course is updated.");</script>';
 
         header('location:courseSelectionForm.php');
 
@@ -93,7 +43,6 @@ if (isset($_POST['title'])) {
     <title>Course Report</title>
     <link rel="stylesheet" href="layout.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>

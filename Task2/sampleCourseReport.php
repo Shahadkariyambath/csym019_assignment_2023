@@ -9,6 +9,7 @@ include 'dbinstance.php';
     <title>Course Report</title>
     <link rel="stylesheet" href="layout.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -222,28 +223,18 @@ include 'dbinstance.php';
                             $labelnames = explode(",", $moduledataString);
 
 
-                            $labelMap = array_combine($labelValues, $labelnames);
 
                             $barValue = $creditdataArray;
 
-                            foreach ($labelValues as $value) {
-                                // echo $labelMap[$value] . '<br>';
-                                $array = [
-                                    "label" => $labelMap[$value],
-                                    // Get the corresponding label name from the label map
-                                    "backgroundColor" => getRandomColor(),
-                                    "data" => $barValue
-                                ];
-                                $barData[] = $array;
-                            }
 
-                            // $barValue = $creditdataArray;
-                            // $array = [
-                            //     "label" => $row['title'],
-                            //     "backgroundColor" => getRandomColor(),
-                            //     "data" => $barValue
-                            // ];
-                            // $barData[] = $array;
+
+                            $barValue = $creditdataArray;
+                            $array = [
+                                "label" => $row['title'],
+                                "backgroundColor" => getRandomColor(),
+                                "data" => $barValue
+                            ];
+                            $barData[] = $array;
                         }
                     }
                 }
