@@ -141,7 +141,7 @@ include 'dbinstance.php';
                 
 
                 $Ids = $_GET['selection'];
-                $stmt = $pdo->prepare("select * from coursedetail where id in(" . implode(',', $Ids) . ")");
+                $stmt = $pdo->prepare("select * from coursedetail where id in(" . implode(',', $Ids) . ") order by title");
 
                 $barData = [];
 
@@ -182,24 +182,10 @@ include 'dbinstance.php';
 
                         $moduledataString = implode(",", $new);
 
-                        // Output the result
-                        // echo $moduledataString;
-                
-
                         $creditdataString = implode(',', $creditdata);
 
-                        // $creditdataString = explode(",", $creditdataString);
-                        // $new = array_map(function ($element) {
-                        //     return "'" . trim($element) . "'";
-                        // }, $creditdataString);
-                
-                        // $creditdataString = implode(",", $new);
-                
-                        // echo $creditdataString;
                         $creditdataArray = explode(",", $creditdataString); // Split the string by commas
                 
-
-
                         $chart = '<canvas id="chart' . $row['id'] . '" width="400" height="400"></canvas>
                         <script>createPieChart("chart' . $row['id'] . '",[' . $moduledataString . '],[' . $creditdataString . '])</script>';
 

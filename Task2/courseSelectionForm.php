@@ -80,14 +80,6 @@
                                 $entryrequirement = $row['entryrequirement'];
                                 $feesfunding = $row['feesfunding'];
                                 $faqs = $row['faqs'];
-                                // $kcal = "hello";
-                                // $fat = $row['rd_nutrition_fat'];
-                                // $saturates = $row['rd_nutrition_saturates'];
-                                // $carbs = $row['rd_nutrition_carbs'];
-                                // $sugar = $row['rd_nutrition_sugar'];
-                                // $fibre = $row['rd_nutrition_fibre'];
-                                // $protien = $row['rd_nutrition_protien'];
-                                // $salt = $row['rd_nutrition_salt'];
                                 echo '<tr>
     <td><input type="checkbox" id="selection" class="selection" name="selection[]"   value=' . $id . '></td>
     <th scope="row">' . $title . '</th>
