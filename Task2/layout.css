@@ -1,129 +1,115 @@
 body {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    grid-template-rows: auto;
-    grid-template-areas: "header header"
-                            "nav main"
-                            "footer footer";
+    display: grid;  /* Set display mode to grid */
+    grid-template-columns: 15% 85%;  /* Define column sizes */
+    grid-template-rows: auto;  /* Auto-size rows */
+    grid-template-areas: "header header" "nav main" "footer footer";  /* Define grid areas */
 }
 
 header {
-    background-color: #555;
-    color: white;
-    padding: 10px;
-    grid-area: header;
+    background-color: #555;  /* Set background color */
+    color: white;  /* Set text color */
+    padding: 10px;  /* Add padding */
+    grid-area: header;  /* Assign grid area */
 }
 
 nav {
-    background-color: whitesmoke;
-    color: black;
-    grid-area: nav;
+    background-color: whitesmoke;  /* Set background color */
+    color: black;  /* Set text color */
+    grid-area: nav;  /* Assign grid area */
 }
 
 nav > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-right: 2%;
-    border-color: whitesmoke;
-    border-style: solid;
-    /*width: 10%;*/
-    background-color: whitesmoke;
-  }
-  
-nav > ul li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
+    list-style-type: none;  /* Remove default list styles */
+    margin: 0;  /* Remove margin */
+    padding: 0;  /* Remove padding */
+    border-right: 2%;  /* Add right border */
+    border-color: whitesmoke;  /* Set border color */
+    border-style: solid;  /* Set border style */
+    background-color: whitesmoke;  /* Set background color */
 }
-  
-/* Change the link color on hover */
+
+nav > ul li a {
+    display: block;  /* Display as block element */
+    color: #000;  /* Set link color */
+    padding: 8px 16px;  /* Add padding */
+    text-decoration: none;  /* Remove text decoration */
+}
+
 nav > ul li a:hover {
-    background-color: #555;
-    color: whitesmoke;
+    background-color: #555;  /* Set background color on hover */
+    color: whitesmoke;  /* Set text color on hover */
 }
 
 main {
-    background-color: whitesmoke;
-    color: black;
-    margin-left: 1em;
-    padding-left: 1em;
-    grid-area: main;
+    background-color: whitesmoke;  /* Set background color */
+    color: black;  /* Set text color */
+    margin-left: 1em;  /* Add left margin */
+    padding-left: 1em;  /* Add left padding */
+    grid-area: main;  /* Assign grid area */
 }
 
 footer {
-
-    position: fixed;
-    grid-area: footer;
-    bottom: 0;
-    left: 0;
-    background-color: #555;
-    text-align: center;
-
-
+    position: fixed;  /* Set position to fixed */
+    grid-area: footer;  /* Assign grid area */
+    bottom: 0;  /* Align to bottom */
+    left: 0;  /* Align to left */
+    background-color: #555;  /* Set background color */
+    text-align: center;  /* Align text to center */
 }
 
 .note {
-    color: red;
-    font-size: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 1em;
-
-    
+    color: red;  /* Set text color */
+    font-size: 12pt;  /* Set font size */
+    font-family: Arial, Helvetica, sans-serif;  /* Set font family */
+    padding-top: 1em;  /* Add top padding */
 }
 
 .blueNote {
-    color: blue;
-    font-size: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 1em;
-    font-weight: bold;
+    color: blue;  /* Set text color */
+    font-size: 12pt;  /* Set font size */
+    font-family: Arial, Helvetica, sans-serif;  /* Set font family */
+    padding-top: 1em;  /* Add top padding */
+    font-weight: bold;  /* Set font weight */
 }
 
 .sketch img {
-    width: 60%;
-    height: auto;
+    width: 60%;  /* Set image width */
+    height: auto;  /* Set auto height */
 }
 
 .addmore > input {
-    display:block;
-    float: left;
-    margin: 0 2em 2em 2em;
-    padding: 0.5em 5em;
-    text-decoration: none;
-    background-color: whitesmoke;
-    color:#555;
+    display:block;  /* Display as block element */
+    float: left;  /* Float to left */
+    margin: 0 2em 2em 2em;  /* Add margins */
+    padding: 0.5em 5em;  /* Add padding */
+    text-decoration: none;  /* Remove text decoration */
+    background-color: whitesmoke;  /* Set background color */
+    color:#555;  /* Set text color */
 }
 
-/* Change the link color on hover */
 .addmore > input:hover {
-    display:block;
-    float: left;
-    margin: 0 2em 2em 2em;
-    padding: 0.5em 5em;
-    text-decoration: none;
-    background-color: #555;
-    color: whitesmoke;
+    display:block;  /* Display as block element */
+    float: left;  /* Float to left */
+    margin: 0 2em 2em 2em;  /* Add margins */
+    padding: 0.5em 5em;  /* Add padding */
+    text-decoration: none;  /* Remove text decoration */
+    background-color: #555;  /* Set background color on hover */
+    color: whitesmoke;  /* Set text color on hover */
 }
 
-
-#deletebtnstyle{
-    width: 6%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
+#deletebtnstyle {
+    width: 6%;  /* Set width */
+    padding-right: calc(var(--bs-gutter-x) * .5);  /* Add right padding */
+    padding-left: calc(var(--bs-gutter-x) * .5);  /* Add left padding */
 }
 
 td,th {
-    border: 1px solid #99979d;
-    text-align: left;
-    padding: 8px;
-    min-width: 100px;
+    border: 1px solid #99979d;  /* Set border */
+    text-align: left;  /* Align text to left */
+    padding: 8px;  /* Add padding */
+    min-width: 100px;  /* Set minimum width */
 }
 
 th {
-    background-color: #656565;
+    background-color: #656565;  /* Set background color */
 }
-
-
-

@@ -1,9 +1,12 @@
 <?php
 
-//php functions to end user sessions and redirect to the login page.
-
+// Start the session
 session_start();
+
+// Destroy the session
 session_destroy();
-header('location: index.php');
+
+// Redirect the user to the login page
+header("location: index.php");
 
 ?>

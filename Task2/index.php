@@ -1,38 +1,34 @@
 <!-- login.php is used for login into the page using username and password data -->
 
-<?php
-include 'dbinstance.php'; // this will include the dbinstance.php file to access the mysql database 
+<?php include "dbinstance.php";
+// this will include the dbinstance.php file to access the mysql database
 ?>
 
 
-<?php
+<?php if (isset($_POST["username"])) {
+    // Code to be executed if the 'username' field is set in the $_POST array
 
-if (isset($_POST['username'])) {
+    $uname = $_POST["username"]; //the username is assigned to a variable uname
+    $password = $_POST["password"]; //password is assigned to a variable password
 
-    $uname = $_POST['username']; //the username is assigned to a variable uname
-    $password = $_POST['password']; //password is assigned to a variable password
-
-    // $result = fetchARecordWithTwoWhereClause('user', 'email', $uname, 'password', $password);
-
-    $stmt = $GLOBALS['pdo']->prepare('SELECT * FROM user WHERE username = :value AND password = :valuetwo');
+    $stmt = $GLOBALS["pdo"]->prepare(
+        "SELECT * FROM user WHERE username = :value AND password = :valuetwo"
+    ); // Preparing the statement
+    // Define the criteria for the prepared statement
     $criteria = [
-        'value' => $uname,
-        'valuetwo' => $password
+        "value" => $uname,
+        // Set the value of the 'username' column to the value of $uname
+        "valuetwo" => $password, // Set the value of the 'password' column to the value of $password
     ];
-    $stmt->execute($criteria);
-    $resultAll = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+    $stmt->execute($criteria); // Execute the prepared statement with the given criteria
+    $resultAll = $stmt->fetchAll(PDO::FETCH_ASSOC); // Fetch all rows from the result set into $resultAll as an associative array
 
     if ($resultAll) {
-        //if there is an matching row, then the page will redirected to courseSelectionForm.php
-        header('location:courseSelectionForm.php');
+        header("location:courseSelectionForm.php"); // Redirect the user to the specified page if the query result is not empty
     } else {
-        // if there is no matching row then it will print " Something went Wrong"
-        echo '<script>alert("You have entered an incorrect username or password.");</script>';
+        echo '<script>alert("You have entered an incorrect username or password.");</script>'; // Display an alert message if the query result is empty, indicating incorrect credentials
     }
-
-}
-?>
+} ?>
 
 
 
@@ -59,34 +55,46 @@ if (isset($_POST['username'])) {
     <main>
 
         <div class="container" style="display: flex; align-items: center; ">
+            <!-- Container with flex display and center alignment -->
 
             <form method="POST" action="index.php">
+                <!-- Form element with method set to POST and action set to "index.php" -->
+
                 <div class="form-group my-4">
+                    <!-- Form group for the username input -->
                     <label>Username: </label>
+                    <!-- Label for the username input -->
                     <input type="username" class="form-control" name="username" required
                         placeholder="Enter the Username" />
-                    <!-- input textbox to inserting the username -->
+                    <!-- Input textbox for entering the username -->
                 </div>
+
                 <div class="form-group my-3">
+                    <!-- Form group for the password input -->
                     <label>Password: </label>
+                    <!-- Label for the password input -->
                     <input type="password" class="form-control" name="password" required
                         placeholder="Enter the password" />
-                    <!-- input textbox to inserting the password -->
+                    <!-- Input textbox for entering the password -->
                 </div>
-                <div style="text-align: center;">
-                    <input type="submit" type="submit" value="LOG IN" class="btn-login" />
-                    <!-- Input element for submitting a login details -->
-                </div>
-                <div>
-                    <p class="mb-0">Don't have an account? <a href="registrationForm.php" class=" fw-bold">Sign Up</a>
-                    </p>
-                </div>
-                <!-- <br> -->
-                <!-- <a href="registration.php">Haven't got an account? Click here to create a new one!</a> -->
 
+                <div style="text-align: center;">
+                    <!-- Container with center alignment for the login button -->
+                    <input type="submit" type="submit" value="LOG IN" class="btn-login" />
+                    <!-- Input element for submitting the login details -->
+                </div>
+
+                <div>
+                    <!-- Container for the sign up link -->
+                    <p class="mb-0">Don't have an account? <a href="registrationForm.php" class="fw-bold">Sign Up</a>
+                    </p>
+                    <!-- Paragraph with a sign up link -->
+                </div>
             </form>
         </div>
+
     </main>
+    <!-- Display the copyright information -->
     <footer>&copy; CSYM019 2023</footer>
 </body>
 
